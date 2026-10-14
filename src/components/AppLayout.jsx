@@ -2,24 +2,20 @@ import {useState} from 'react'
 import {
     AppBar,
     Box,
-    Button,
     Divider,
     Drawer,
-    FormControlLabel,
     IconButton,
     List,
     ListItemButton,
     ListItemIcon,
     ListItemText,
     Menu,
-    MenuItem,
+    MenuItem, Stack,
     Switch,
     Toolbar,
     Typography,
 } from '@mui/material'
 import {
-    Brightness4,
-    Brightness7,
     Dashboard,
     Language,
     Logout,
@@ -32,13 +28,12 @@ import {
     useNavigate,
 } from 'react-router-dom'
 import {useTranslation} from 'react-i18next'
-import i18n from '../i18n.js'
+import i18n from '../i18n/index.js'
 import {useColorMode} from '../theme/ColorModeContext.js'
 
 const languages = [
     {code: 'en', label: 'English'},
     {code: 'el', label: 'Ελληνικά'},
-    {code: 'nl', label: 'Nederlands'},
 ]
 
 export default function AppLayout({
@@ -205,18 +200,28 @@ export default function AppLayout({
                         {t('appearance')}
                     </Typography>
 
-                    <FormControlLabel
-                        sx={{m: 0, mt: 1, width: '100%', justifyContent: 'space-between'}}
-                        label={t('darkMode')}
-                        labelPlacement="start"
-                        control={
-                            <Switch
-                                checked={mode === 'dark'}
-                                onChange={toggleColorMode}
-                                color="primary"
-                            />
-                        }
-                    />
+
+                    <Stack
+                        direction="row"
+                        sx={{
+                            mt: 1,
+                            width: '100%',
+                            alignItems: 'center',
+                            justifyContent: 'space-between',
+                        }}
+                    >
+                        <Typography variant="body2">
+                            {t('darkMode')}
+                        </Typography>
+
+                        <Switch
+                            checked={mode === 'dark'}
+                            onChange={toggleColorMode}
+                            color="primary"
+                        />
+                    </Stack>
+
+
                 </Box>
 
                 <Divider sx={{my: 1}}/>

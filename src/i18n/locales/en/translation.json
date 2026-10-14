@@ -1,0 +1,22 @@
+{
+  "appName": "DemoDash",
+  "dashboard": "Dashboard",
+  "overview": "Overview",
+  "login": "Login",
+  "logout": "Logout",
+  "settings": "Settings",
+  "appearance": "Appearance",
+  "darkMode": "Dark mode",
+  "language": "Language",
+  "welcome": "Welcome back",
+  "dashboardDescription": "Here is an overview of your workspace.",
+  "totalProjects": "Total projects",
+  "activeTasks": "Active tasks",
+  "teamMembers": "Team members",
+  "completed": "Completed",
+  "recentActivity": "Recent activity",
+  "activityPlaceholder": "Your recent activity will appear here.",
+  "loginTitle": "Sign in",
+  "loginDescription": "Authentication will be connected in a later step.",
+  "backToDashboard": "Back to dashboard"
+}

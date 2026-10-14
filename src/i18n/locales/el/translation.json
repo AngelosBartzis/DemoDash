@@ -1,0 +1,22 @@
+{
+  "appName": "DemoDash",
+  "dashboard": "Πίνακας ελέγχου",
+  "overview": "Επισκόπηση",
+  "login": "Σύνδεση",
+  "logout": "Αποσύνδεση",
+  "settings": "Ρυθμίσεις",
+  "appearance": "Εμφάνιση",
+  "darkMode": "Σκούρο θέμα",
+  "language": "Γλώσσα",
+  "welcome": "Καλώς ήρθατε",
+  "dashboardDescription": "Εδώ θα βρείτε μια επισκόπηση του χώρου εργασίας σας.",
+  "totalProjects": "Σύνολο έργων",
+  "activeTasks": "Ενεργές εργασίες",
+  "teamMembers": "Μέλη ομάδας",
+  "completed": "Ολοκληρωμένα",
+  "recentActivity": "Πρόσφατη δραστηριότητα",
+  "activityPlaceholder": "Η πρόσφατη δραστηριότητά σας θα εμφανίζεται εδώ.",
+  "loginTitle": "Σύνδεση",
+  "loginDescription": "Η λειτουργία σύνδεσης θα προστεθεί σε επόμενο βήμα.",
+  "backToDashboard": "Επιστροφή στον πίνακα ελέγχου"
+}
