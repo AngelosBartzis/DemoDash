@@ -22,5 +22,8 @@
   "views": "Views",
   "visits": "Visits",
   "newUsers": "New Users",
-  "activeUsers": "Active Users"
+  "activeUsers": "Active Users",
+  "notifications": "Notifications",
+  "activities": "Activities",
+  "contacts": "Contacts"
 }

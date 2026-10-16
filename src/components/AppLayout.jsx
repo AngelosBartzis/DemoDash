@@ -1,9 +1,11 @@
 import {useState} from 'react'
-import {Box} from '@mui/material'
+import {Box, useMediaQuery, Drawer} from '@mui/material'
 import {Outlet, useNavigate} from 'react-router-dom'
 import AppNavbar from './layout/AppNavbar.jsx'
 import AppSidebar from './layout/AppSidebar.jsx'
 import SettingsMenu from './layout/SettingsMenu.jsx'
+import {useTheme} from '@mui/material/styles'
+import RightSidebar from './layout/RightSidebar.jsx'
 
 export default function AppLayout({
                                       isLoggedIn,
@@ -13,6 +15,9 @@ export default function AppLayout({
 
     const [drawerOpen, setDrawerOpen] = useState(false)
     const [settingsAnchor, setSettingsAnchor] = useState(null)
+    const theme = useTheme()
+    const isDesktop = useMediaQuery(theme.breakpoints.up('lg'))
+    const [rightDrawerOpen, setRightDrawerOpen] = useState(false)
 
     const closeDrawer = () => {
         setDrawerOpen(false)
@@ -55,15 +60,26 @@ export default function AppLayout({
             />
 
             <Box
-                component="main"
                 sx={{
-                    width: '100%',
-                    maxWidth: 1440,
-                    mx: 'auto',
-                    p: {xs: 2, sm: 3, md: 4},
+                    display: 'flex',
+                    alignItems: 'flex-start',
+                    minWidth: 0,
                 }}
             >
-                <Outlet context={{isLoggedIn, setIsLoggedIn}}/>
+                <Box
+                    component="main"
+                    sx={{
+                        flex: 1,
+                        minWidth: 0,
+                        maxWidth: isDesktop ? 'none' : 1440,
+                        mx: 'auto',
+                        p: {xs: 2, sm: 3, md: 4},
+                    }}
+                >
+                    <Outlet context={{isLoggedIn, setIsLoggedIn}}/>
+                </Box>
+
+                {isDesktop && <RightSidebar/>}
             </Box>
         </Box>
     )

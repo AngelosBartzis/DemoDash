@@ -22,5 +22,8 @@
   "views": "Προβολές",
   "visits": "Επισκέψεις",
   "newUsers": "Νέοι χρήστες",
-  "activeUsers": "Ενεργοί χρήστες"
+  "activeUsers": "Ενεργοί χρήστες",
+  "notifications": "Ειδοποιήσεις",
+  "activities": "Δραστηριότητες",
+  "contacts": "Επαφές"
 }

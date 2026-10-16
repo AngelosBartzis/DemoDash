@@ -1,9 +1,3 @@
-import {
-    Groups,
-    Language,
-    PersonAdd,
-    Visibility,
-} from '@mui/icons-material'
 import {Box} from '@mui/material'
 import {useTranslation} from 'react-i18next'
 import StatCard from './StatCard.jsx'
@@ -16,25 +10,21 @@ export default function DashboardStats() {
             label: t('views'),
             value: '24,589',
             change: 12.8,
-            icon: Visibility,
         },
         {
             label: t('visits'),
             value: '8,549',
             change: -3.2,
-            icon: Language,
         },
         {
             label: t('newUsers'),
             value: '1,245',
             change: 8.4,
-            icon: PersonAdd,
         },
         {
             label: t('activeUsers'),
             value: '573',
             change: -1.6,
-            icon: Groups,
         },
     ]
 
