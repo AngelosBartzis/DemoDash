@@ -73,6 +73,7 @@ export default function AppLayout({
                     sx={{
                         flex: 1,
                         minWidth: 0,
+                        minHeight: 'calc(100vh - 64px)',
                         maxWidth: isDesktop ? 'none' : 1440,
                         mx: 'auto',
                         p: {xs: 2, sm: 3, md: 4},
