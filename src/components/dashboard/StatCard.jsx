@@ -3,6 +3,7 @@ import {
     TrendingUp,
 } from '@mui/icons-material'
 import {
+    Box,
     Card,
     CardContent,
     Stack,
@@ -29,38 +30,41 @@ export default function StatCard({label, value, change}) {
                     {label}
                 </Typography>
 
+
                 <Stack
                     direction="row"
                     spacing={1}
                     sx={{
                         alignItems: 'center',
-                        flexWrap: 'wrap',
                         mt: 1,
                     }}
                 >
-                    <Typography
-                        variant="h4"
-                        component="p"
-                        sx={{
-                            fontWeight: 700,
-                            fontSize: {xs: '1.65rem', sm: '1.8rem'},
-                            lineHeight: 1.3,
-                            fontVariantNumeric: 'tabular-nums',
-                        }}
-                    >
-                        {value}
-                    </Typography>
+                    <Box sx={{flexShrink: 0}}>
+                        <Typography
+                            variant="h4"
+                            component="p"
+                            sx={{
+                                fontWeight: 700,
+                                fontSize: {xs: '1.65rem', sm: '1.8rem'},
+                                lineHeight: 1.3,
+                                fontVariantNumeric: 'tabular-nums',
+                            }}
+                        >
+                            {value}
+                        </Typography>
+                    </Box>
 
                     <Stack
                         direction="row"
                         spacing={0.5}
                         sx={{
+                            flex: 1,
+                            minWidth: 0,
                             alignItems: 'center',
+                            justifyContent: 'center',
                             color: isPositive ? 'success.main' : 'error.main',
                         }}
                     >
-
-
                         <Typography
                             variant="caption"
                             sx={{
@@ -72,9 +76,11 @@ export default function StatCard({label, value, change}) {
                             {isPositive ? '+' : '-'}
                             {Math.abs(change).toFixed(1)}%
                         </Typography>
-                        <TrendIcon sx={{fontSize: 16}}/>
+
+                        <TrendIcon sx={{fontSize: 16, flexShrink: 0}}/>
                     </Stack>
                 </Stack>
+
             </CardContent>
         </Card>
     )
