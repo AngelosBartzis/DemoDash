@@ -1,5 +1,4 @@
 import {
-    Box,
     Paper,
     Stack,
     Typography,
@@ -12,22 +11,16 @@ export default function DashboardPage() {
 
     return (
         <Stack spacing={3}>
-            <Box>
-                <Typography
-                    variant="h4"
-                    component="h1"
-                    sx={{
-                        fontSize: {xs: '1.65rem', sm: '2.125rem'},
-                        fontWeight: 700,
-                    }}
-                >
-                    {t('welcome')}
-                </Typography>
-
-                <Typography color="text.secondary" sx={{mt: 1}}>
-                    {t('dashboardDescription')}
-                </Typography>
-            </Box>
+            <Typography
+                variant="h4"
+                component="h1"
+                sx={{
+                    fontSize: {xs: '1rem', sm: '1.1rem'},
+                    fontWeight: 700,
+                }}
+            >
+                {t('overview')}
+            </Typography>
 
             <DashboardStats/>
 

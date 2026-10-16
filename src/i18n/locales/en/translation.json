@@ -18,5 +18,9 @@
   "activityPlaceholder": "Your recent activity will appear here.",
   "loginTitle": "Sign in",
   "loginDescription": "Authentication will be connected in a later step.",
-  "backToDashboard": "Back to dashboard"
+  "backToDashboard": "Back to dashboard",
+  "views": "Views",
+  "visits": "Visits",
+  "newUsers": "New Users",
+  "activeUsers": "Active Users"
 }
