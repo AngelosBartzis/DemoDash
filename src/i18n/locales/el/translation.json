@@ -25,5 +25,22 @@
   "activeUsers": "Ενεργοί χρήστες",
   "notifications": "Ειδοποιήσεις",
   "activities": "Δραστηριότητες",
-  "contacts": "Επαφές"
+  "contacts": "Επαφές",
+  "userName": "Αλέξανδρος Μόργκαν",
+  "userAccount": "Προσωπικός λογαριασμός",
+  "favorites": "Αγαπημένα",
+  "recently": "Πρόσφατα",
+  "dashboardsSection": "ΠΙΝΑΚΕΣ",
+  "pagesSection": "ΣΕΛΙΔΕΣ",
+  "folderOne": "Φάκελος 1",
+  "folderTwo": "Φάκελος 2",
+  "userProfile": "Προφίλ χρήστη",
+  "projects": "Έργα",
+  "campaigns": "Καμπάνιες",
+  "documents": "Έγγραφα",
+  "followers": "Ακόλουθοι",
+  "account": "Λογαριασμός",
+  "corporate": "Εταιρικά",
+  "blog": "Ιστολόγιο",
+  "social": "Κοινωνικά"
 }

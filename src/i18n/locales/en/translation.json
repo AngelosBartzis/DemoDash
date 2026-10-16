@@ -25,5 +25,22 @@
   "activeUsers": "Active Users",
   "notifications": "Notifications",
   "activities": "Activities",
-  "contacts": "Contacts"
+  "contacts": "Contacts",
+  "userName": "Alex Morgan",
+  "userAccount": "Personal account",
+  "favorites": "Favorites",
+  "recently": "Recently",
+  "dashboardsSection": "DASHBOARDS",
+  "pagesSection": "PAGES",
+  "folderOne": "Folder 1",
+  "folderTwo": "Folder 2",
+  "userProfile": "User Profile",
+  "projects": "Projects",
+  "campaigns": "Campaigns",
+  "documents": "Documents",
+  "followers": "Followers",
+  "account": "Account",
+  "corporate": "Corporate",
+  "blog": "Blog",
+  "social": "Social"
 }
