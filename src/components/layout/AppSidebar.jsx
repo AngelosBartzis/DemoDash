@@ -89,7 +89,7 @@ export default function AppSidebar({
 
             <ListItemText
                 primary={t(labelKey)}
-                primaryTypographyProps={{variant: 'body2'}}
+                primarytypographyprops={{variant: 'body2'}}
             />
         </ListItemButton>
     )
@@ -133,7 +133,7 @@ export default function AppSidebar({
 
                     <ListItemText
                         primary={t(key)}
-                        primaryTypographyProps={{variant: 'body2'}}
+                        primarytypographyprops={{variant: 'body2'}}
                     />
                 </ListItemButton>
 
@@ -172,16 +172,11 @@ export default function AppSidebar({
                 </Avatar>
 
                 <Box sx={{minWidth: 0}}>
-                    <Typography variant="body2" fontWeight={700} noWrap>
+                    <Typography variant="body1" fontWeight={700} noWrap>
                         {isLoggedIn ? t('userName') : t('appName')}
-                    </Typography>
-                    <Typography variant="caption" color="text.secondary">
-                        {isLoggedIn ? t('userAccount') : t('overview')}
                     </Typography>
                 </Box>
             </Box>
-
-            <Divider/>
 
             <Box sx={{display: 'flex', gap: 1, px: 1.5, py: 1}}>
                 <ListItemButton
@@ -241,7 +236,7 @@ export default function AppSidebar({
                                 </ListItemIcon>
                                 <ListItemText
                                     primary={t(item.labelKey)}
-                                    primaryTypographyProps={{variant: 'body2'}}
+                                    primarytypographyprops={{variant: 'body2'}}
                                 />
                             </ListItemButton>
                         ) : (
@@ -273,7 +268,7 @@ export default function AppSidebar({
                         </ListItemIcon>
                         <ListItemText
                             primary={t('logout')}
-                            primaryTypographyProps={{variant: 'body2'}}
+                            primarytypographyprops={{variant: 'body2'}}
                         />
                     </ListItemButton>
                 ) : (
@@ -288,7 +283,7 @@ export default function AppSidebar({
                         </ListItemIcon>
                         <ListItemText
                             primary={t('login')}
-                            primaryTypographyProps={{variant: 'body2'}}
+                            primarytypographyprops={{variant: 'body2'}}
                         />
                     </ListItemButton>
                 )}
