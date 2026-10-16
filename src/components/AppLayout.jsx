@@ -1,10 +1,10 @@
 import {useState} from 'react'
-import {Box, useMediaQuery, Drawer} from '@mui/material'
+import {Box, useMediaQuery} from '@mui/material'
+import {useTheme} from '@mui/material/styles'
 import {Outlet, useNavigate} from 'react-router-dom'
 import AppNavbar from './layout/AppNavbar.jsx'
 import AppSidebar from './layout/AppSidebar.jsx'
 import SettingsMenu from './layout/SettingsMenu.jsx'
-import {useTheme} from '@mui/material/styles'
 import RightSidebar from './layout/RightSidebar.jsx'
 
 export default function AppLayout({
@@ -12,12 +12,11 @@ export default function AppLayout({
                                       setIsLoggedIn,
                                   }) {
     const navigate = useNavigate()
+    const theme = useTheme()
+    const isDesktop = useMediaQuery(theme.breakpoints.up('lg'))
 
     const [drawerOpen, setDrawerOpen] = useState(false)
     const [settingsAnchor, setSettingsAnchor] = useState(null)
-    const theme = useTheme()
-    const isDesktop = useMediaQuery(theme.breakpoints.up('lg'))
-    const [rightDrawerOpen, setRightDrawerOpen] = useState(false)
 
     const closeDrawer = () => {
         setDrawerOpen(false)
@@ -48,6 +47,7 @@ export default function AppLayout({
             />
 
             <AppSidebar
+                desktop={isDesktop}
                 open={drawerOpen}
                 onClose={closeDrawer}
                 isLoggedIn={isLoggedIn}
@@ -59,11 +59,13 @@ export default function AppLayout({
                 onClose={closeSettings}
             />
 
+
             <Box
                 sx={{
                     display: 'flex',
-                    alignItems: 'flex-start',
+                    alignItems: 'stretch',
                     minWidth: 0,
+                    ml: {lg: '240px'},
                 }}
             >
                 <Box
@@ -81,6 +83,7 @@ export default function AppLayout({
 
                 {isDesktop && <RightSidebar/>}
             </Box>
+
         </Box>
     )
 }
