@@ -33,7 +33,7 @@ export default function StatCard({label, value, change}) {
                     direction="row"
                     spacing={1}
                     sx={{
-                        alignItems: 'baseline',
+                        alignItems: 'center',
                         flexWrap: 'wrap',
                         mt: 1,
                     }}
@@ -53,13 +53,13 @@ export default function StatCard({label, value, change}) {
 
                     <Stack
                         direction="row"
-                        spacing={0.25}
+                        spacing={0.5}
                         sx={{
                             alignItems: 'center',
                             color: isPositive ? 'success.main' : 'error.main',
                         }}
                     >
-                        <TrendIcon sx={{fontSize: 16}}/>
+
 
                         <Typography
                             variant="caption"
@@ -69,8 +69,10 @@ export default function StatCard({label, value, change}) {
                                 fontVariantNumeric: 'tabular-nums',
                             }}
                         >
+                            {isPositive ? '+' : '-'}
                             {Math.abs(change).toFixed(1)}%
                         </Typography>
+                        <TrendIcon sx={{fontSize: 16}}/>
                     </Stack>
                 </Stack>
             </CardContent>
