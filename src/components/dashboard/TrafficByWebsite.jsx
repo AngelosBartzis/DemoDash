@@ -37,7 +37,7 @@ export default function TrafficByWebsite() {
 
             <Box sx={{width: '100%', minWidth: 0}}>
                 <BarChart
-                    height={280}
+                    height={240}
                     layout="horizontal"
                     yAxis={[
                         {

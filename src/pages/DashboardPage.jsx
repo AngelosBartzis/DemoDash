@@ -28,16 +28,18 @@ export default function DashboardPage() {
             </Typography>
 
             <DashboardStats/>
+
+
             <Grid container spacing={3}>
-                <Grid size={{xs: 12, md: 7}}>
+                <Grid size={{xs: 12, md: 8}}>
                     <TotalUsersChart/>
                 </Grid>
 
-                <Grid size={{xs: 12, md: 5}}>
+                <Grid size={{xs: 12, md: 4}}>
                     <TrafficByWebsite/>
                 </Grid>
 
-                <Grid size={{xs: 12, md: 5}}>
+                <Grid size={{xs: 12, md: 6}}>
                     <TrafficByDevice/>
                 </Grid>
 
@@ -45,6 +47,7 @@ export default function DashboardPage() {
                     <TrafficByLocation/>
                 </Grid>
             </Grid>
+
 
             <Paper
                 variant="outlined"

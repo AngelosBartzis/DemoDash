@@ -88,7 +88,7 @@ export default function TotalUsersChart() {
 
             <Box sx={{width: '100%', minWidth: 0}}>
                 <LineChart
-                    height={320}
+                    height={240}
                     xAxis={[
                         {
                             scaleType: 'point',
