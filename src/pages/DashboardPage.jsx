@@ -4,10 +4,11 @@ import {
     Typography,
 } from '@mui/material'
 import {useTranslation} from 'react-i18next'
+import Grid from '@mui/material/Grid'
 import DashboardStats from '../components/dashboard/DashboardStats.jsx'
 import TotalUsersChart from '../components/dashboard/TotalUsersChart.jsx'
 import TrafficByWebsite from '../components/dashboard/TrafficByWebsite.jsx'
-import Grid from '@mui/material/Grid'
+import TrafficByDevice from '../components/dashboard/TrafficByDevice.jsx'
 
 export default function DashboardPage() {
     const {t} = useTranslation()
@@ -33,6 +34,10 @@ export default function DashboardPage() {
 
                 <Grid size={{xs: 12, md: 5}}>
                     <TrafficByWebsite/>
+                </Grid>
+
+                <Grid size={{xs: 12, md: 5}}>
+                    <TrafficByDevice/>
                 </Grid>
             </Grid>
 

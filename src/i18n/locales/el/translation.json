@@ -52,5 +52,10 @@
   "currentPeriod": "Τρέχουσα περίοδος",
   "previousPeriod": "Προηγούμενη περίοδος",
   "trafficByWebsite": "Επισκεψιμότητα ανά ιστότοπο",
-  "trafficByWebsiteDescription": "Επισκέψεις ανά πηγή επισκεψιμότητας"
+  "trafficByWebsiteDescription": "Επισκέψεις ανά πηγή επισκεψιμότητας",
+  "trafficByDevice": "Επισκεψιμότητα ανά συσκευή",
+  "trafficByDeviceDescription": "Επισκέψεις ανά τύπο συσκευής",
+  "desktop": "Υπολογιστής",
+  "mobile": "Κινητό",
+  "tablet": "Τάμπλετ"
 }

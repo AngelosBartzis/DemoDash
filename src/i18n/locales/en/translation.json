@@ -52,5 +52,10 @@
   "currentPeriod": "Current period",
   "previousPeriod": "Previous period",
   "trafficByWebsite": "Traffic by Website",
-  "trafficByWebsiteDescription": "Visits by traffic source"
+  "trafficByWebsiteDescription": "Visits by traffic source",
+  "trafficByDevice": "Traffic by Device",
+  "trafficByDeviceDescription": "Visits by device type",
+  "desktop": "Desktop",
+  "mobile": "Mobile",
+  "tablet": "Tablet"
 }
