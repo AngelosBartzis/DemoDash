@@ -4,12 +4,12 @@ import {useTheme} from '@mui/material/styles'
 import {useTranslation} from 'react-i18next'
 
 const deviceData = [
-    {labelKey: 'linux', value: 5400},
-    {labelKey: 'mac', value: 3800},
-    {labelKey: 'ios', value: 800},
-    {labelKey: 'windows', value: 2400},
-    {labelKey: 'android', value: 600},
-    {labelKey: 'other', value: 400},
+    {labelKey: 'linux', value: 18000, color: '#607D8B'},
+    {labelKey: 'mac', value: 28000, color: '#40C4B4'},
+    {labelKey: 'ios', value: 20000, color: '#212121'},
+    {labelKey: 'windows', value: 30000, color: '#64B5F6'},
+    {labelKey: 'android', value: 10000, color: '#9575CD'},
+    {labelKey: 'other', value: 25000, color: '#66BB6A'},
 ]
 
 export default function TrafficByDevice() {
@@ -47,7 +47,7 @@ export default function TrafficByDevice() {
                 <BarChart
                     height={180}
                     categorygapratio={0.3}
-                    margin={{left: 8, right: 8, top: 0, bottom: 18}}
+                    margin={{left: 8, right: 8, top: 18, bottom: 0}}
                     xAxis={[
                         {
                             scaleType: 'band',
@@ -57,7 +57,7 @@ export default function TrafficByDevice() {
                     yAxis={[
                         {
                             min: 0,
-                            max: 6000,
+                            max: 30000,
                             tickNumber: 3,
                             valueFormatter: (value) =>
                                 new Intl.NumberFormat(undefined, {
@@ -68,8 +68,7 @@ export default function TrafficByDevice() {
                     series={[
                         {
                             data: deviceData.map((device) => device.value),
-                            label: t('visits'),
-                            color: theme.palette.primary.main,
+                            colorGetter: (barItem) => deviceData[barItem.dataIndex].color,
                             barWidth: 14,
                             valueFormatter: (value) =>
                                 value == null ? '' : value.toLocaleString(),
