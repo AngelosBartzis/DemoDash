@@ -57,5 +57,12 @@
   "trafficByDeviceDescription": "Visits by device type",
   "desktop": "Desktop",
   "mobile": "Mobile",
-  "tablet": "Tablet"
+  "tablet": "Tablet",
+  "trafficByLocation": "Traffic by Location",
+  "trafficByLocationDescription": "Visits by geographic location",
+  "unitedStates": "United States",
+  "germany": "Germany",
+  "greece": "Greece",
+  "unitedKingdom": "United Kingdom",
+  "otherLocations": "Other"
 }

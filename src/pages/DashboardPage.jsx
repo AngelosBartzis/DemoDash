@@ -9,6 +9,7 @@ import DashboardStats from '../components/dashboard/DashboardStats.jsx'
 import TotalUsersChart from '../components/dashboard/TotalUsersChart.jsx'
 import TrafficByWebsite from '../components/dashboard/TrafficByWebsite.jsx'
 import TrafficByDevice from '../components/dashboard/TrafficByDevice.jsx'
+import TrafficByLocation from '../components/dashboard/TrafficByLocation.jsx'
 
 export default function DashboardPage() {
     const {t} = useTranslation()
@@ -38,6 +39,10 @@ export default function DashboardPage() {
 
                 <Grid size={{xs: 12, md: 5}}>
                     <TrafficByDevice/>
+                </Grid>
+
+                <Grid size={{xs: 12, md: 6}}>
+                    <TrafficByLocation/>
                 </Grid>
             </Grid>
 

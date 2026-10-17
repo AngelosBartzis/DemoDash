@@ -57,5 +57,12 @@
   "trafficByDeviceDescription": "Επισκέψεις ανά τύπο συσκευής",
   "desktop": "Υπολογιστής",
   "mobile": "Κινητό",
-  "tablet": "Τάμπλετ"
+  "tablet": "Τάμπλετ",
+  "trafficByLocation": "Επισκεψιμότητα ανά τοποθεσία",
+  "trafficByLocationDescription": "Επισκέψεις ανά γεωγραφική περιοχή",
+  "unitedStates": "Ηνωμένες Πολιτείες",
+  "germany": "Γερμανία",
+  "greece": "Ελλάδα",
+  "unitedKingdom": "Ηνωμένο Βασίλειο",
+  "otherLocations": "Άλλες περιοχές"
 }
