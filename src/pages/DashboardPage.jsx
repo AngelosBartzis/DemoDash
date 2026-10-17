@@ -29,7 +29,6 @@ export default function DashboardPage() {
 
             <DashboardStats/>
 
-
             <Grid container spacing={3}>
                 <Grid size={{xs: 12, md: 8}}>
                     <TotalUsersChart/>
@@ -49,6 +48,7 @@ export default function DashboardPage() {
             </Grid>
 
             <MarketingSeo/>
+
         </Stack>
     )
 }

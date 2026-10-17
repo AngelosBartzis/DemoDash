@@ -46,7 +46,7 @@ export default function TrafficByDevice() {
             >
                 <BarChart
                     height={180}
-                    categoryGapRatio={0.3}
+                    categorygapratio={0.3}
                     margin={{left: 8, right: 8, top: 0, bottom: 18}}
                     xAxis={[
                         {
