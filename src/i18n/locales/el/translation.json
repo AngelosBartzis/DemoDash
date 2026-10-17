@@ -50,5 +50,7 @@
   "last30Days": "30 ημέρες",
   "last90Days": "90 ημέρες",
   "currentPeriod": "Τρέχουσα περίοδος",
-  "previousPeriod": "Προηγούμενη περίοδος"
+  "previousPeriod": "Προηγούμενη περίοδος",
+  "trafficByWebsite": "Επισκεψιμότητα ανά ιστότοπο",
+  "trafficByWebsiteDescription": "Επισκέψεις ανά πηγή επισκεψιμότητας"
 }

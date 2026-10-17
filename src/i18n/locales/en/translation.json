@@ -50,5 +50,7 @@
   "last30Days": "30 days",
   "last90Days": "90 days",
   "currentPeriod": "Current period",
-  "previousPeriod": "Previous period"
+  "previousPeriod": "Previous period",
+  "trafficByWebsite": "Traffic by Website",
+  "trafficByWebsiteDescription": "Visits by traffic source"
 }

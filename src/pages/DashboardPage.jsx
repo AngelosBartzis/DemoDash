@@ -6,6 +6,8 @@ import {
 import {useTranslation} from 'react-i18next'
 import DashboardStats from '../components/dashboard/DashboardStats.jsx'
 import TotalUsersChart from '../components/dashboard/TotalUsersChart.jsx'
+import TrafficByWebsite from '../components/dashboard/TrafficByWebsite.jsx'
+import Grid from '@mui/material/Grid'
 
 export default function DashboardPage() {
     const {t} = useTranslation()
@@ -24,7 +26,15 @@ export default function DashboardPage() {
             </Typography>
 
             <DashboardStats/>
-            <TotalUsersChart/>
+            <Grid container spacing={3}>
+                <Grid size={{xs: 12, md: 7}}>
+                    <TotalUsersChart/>
+                </Grid>
+
+                <Grid size={{xs: 12, md: 5}}>
+                    <TrafficByWebsite/>
+                </Grid>
+            </Grid>
 
             <Paper
                 variant="outlined"
