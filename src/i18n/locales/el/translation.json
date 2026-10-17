@@ -64,5 +64,11 @@
   "germany": "Γερμανία",
   "greece": "Ελλάδα",
   "unitedKingdom": "Ηνωμένο Βασίλειο",
-  "otherLocations": "Άλλες περιοχές"
+  "otherLocations": "Άλλες περιοχές",
+  "linux": "Linux",
+  "mac": "Mac",
+  "ios": "iOS",
+  "windows": "Windows",
+  "android": "Android",
+  "other": "Άλλο"
 }

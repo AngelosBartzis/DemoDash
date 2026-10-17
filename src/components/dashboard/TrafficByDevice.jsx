@@ -4,9 +4,12 @@ import {useTheme} from '@mui/material/styles'
 import {useTranslation} from 'react-i18next'
 
 const deviceData = [
-    {labelKey: 'desktop', value: 5400},
-    {labelKey: 'mobile', value: 3800},
-    {labelKey: 'tablet', value: 800},
+    {labelKey: 'linux', value: 5400},
+    {labelKey: 'mac', value: 3800},
+    {labelKey: 'ios', value: 800},
+    {labelKey: 'windows', value: 2400},
+    {labelKey: 'android', value: 600},
+    {labelKey: 'other', value: 400},
 ]
 
 export default function TrafficByDevice() {
@@ -17,25 +20,34 @@ export default function TrafficByDevice() {
         <Paper
             variant="outlined"
             sx={{
-                p: {xs: 2, sm: 3},
+                p: {xs: 1.5, sm: 2},
                 minWidth: 0,
                 borderRadius: 3,
-                height: '100%',
+                minHeight: 260,
+                boxSizing: 'border-box',
+                display: 'flex',
+                flexDirection: 'column',
+                overflow: 'hidden',
             }}
         >
-            <Stack spacing={0.5} sx={{mb: 2}}>
+            <Stack spacing={0} sx={{mb: 0}}>
                 <Typography variant="h6" fontWeight={600}>
                     {t('trafficByDevice')}
                 </Typography>
-
-                <Typography variant="body2" color="text.secondary">
-                    {t('trafficByDeviceDescription')}
-                </Typography>
             </Stack>
 
-            <Box sx={{width: '100%', minWidth: 0}}>
+            <Box
+                sx={{
+                    width: '100%',
+                    minWidth: 0,
+                    flex: 1,
+                    minHeight: 0,
+                }}
+            >
                 <BarChart
-                    height={280}
+                    height={180}
+                    categoryGapRatio={0.3}
+                    margin={{left: 8, right: 8, top: 0, bottom: 18}}
                     xAxis={[
                         {
                             scaleType: 'band',
@@ -45,6 +57,8 @@ export default function TrafficByDevice() {
                     yAxis={[
                         {
                             min: 0,
+                            max: 6000,
+                            tickNumber: 3,
                             valueFormatter: (value) =>
                                 new Intl.NumberFormat(undefined, {
                                     notation: 'compact',
@@ -56,12 +70,12 @@ export default function TrafficByDevice() {
                             data: deviceData.map((device) => device.value),
                             label: t('visits'),
                             color: theme.palette.primary.main,
+                            barWidth: 14,
                             valueFormatter: (value) =>
                                 value == null ? '' : value.toLocaleString(),
                         },
                     ]}
                     grid={{horizontal: true}}
-                    margin={{left: 12, right: 12, top: 16, bottom: 32}}
                     borderRadius={6}
                     sx={{
                         '& .MuiChartsAxis-line': {

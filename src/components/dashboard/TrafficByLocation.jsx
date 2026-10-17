@@ -15,6 +15,14 @@ export default function TrafficByLocation() {
     const {t} = useTranslation()
     const theme = useTheme()
 
+    const locationColors = [
+        theme.palette.primary.main,
+        theme.palette.secondary.main,
+        theme.palette.success.main,
+        theme.palette.info.main,
+        theme.palette.text.disabled,
+    ]
+
     return (
         <Paper
             variant="outlined"
@@ -23,28 +31,27 @@ export default function TrafficByLocation() {
                 minWidth: 0,
                 borderRadius: 3,
                 height: '100%',
+                boxSizing: 'border-box',
             }}
         >
-            <Stack spacing={0.5} sx={{mb: 2}}>
+            <Stack spacing={0.5} sx={{mb: 1}}>
                 <Typography variant="h6" fontWeight={600}>
                     {t('trafficByLocation')}
-                </Typography>
-
-                <Typography variant="body2" color="text.secondary">
-                    {t('trafficByLocationDescription')}
                 </Typography>
             </Stack>
 
             <Box
                 sx={{
                     display: 'flex',
-                    justifyContent: 'center',
+                    alignItems: 'center',
+                    gap: {xs: 1, sm: 2},
                     width: '100%',
                     minWidth: 0,
                 }}
             >
                 <PieChart
-                    height={300}
+                    width={160}
+                    height={180}
                     series={[
                         {
                             data: locationData.map((location) => ({
@@ -52,37 +59,73 @@ export default function TrafficByLocation() {
                                 label: t(location.labelKey),
                                 value: location.value,
                             })),
-                            innerRadius: 65,
-                            outerRadius: 100,
+                            innerRadius: 32,
+                            outerRadius: 68,
                             paddingAngle: 3,
-                            cornerRadius: 4,
-                            highlightScope: {fade: 'global', highlight: 'item'},
+                            cornerRadius: 3,
+                            highlightScope: {
+                                fade: 'global',
+                                highlight: 'item',
+                            },
                             faded: {
-                                innerRadius: 60,
-                                additionalRadius: -5,
+                                innerRadius: 25,
+                                additionalRadius: -3,
                                 color: theme.palette.action.disabled,
                             },
                         },
                     ]}
-                    colors={[
-                        theme.palette.primary.main,
-                        theme.palette.secondary.main,
-                        theme.palette.success.main,
-                        theme.palette.info.main,
-                        theme.palette.text.disabled,
-                    ]}
-                    slotProps={{
-                        legend: {
-                            direction: 'horizontal',
-                            position: {vertical: 'bottom', horizontal: 'center'},
-                        },
-                    }}
-                    sx={{
-                        '& .MuiChartsLegend-label': {
-                            fill: theme.palette.text.secondary,
-                        },
-                    }}
+                    colors={locationColors}
+                    hideLegend
                 />
+
+                <Stack spacing={1} sx={{flex: 1, minWidth: 0}}>
+                    {locationData.map((location, index) => (
+                        <Box
+                            key={location.id}
+                            sx={{
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'space-between',
+                                gap: 1,
+                                minWidth: 0,
+                            }}
+                        >
+                            <Box
+                                sx={{
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    gap: 0.75,
+                                    minWidth: 0,
+                                }}
+                            >
+                                <Box
+                                    sx={{
+                                        width: 8,
+                                        height: 8,
+                                        flexShrink: 0,
+                                        borderRadius: '50%',
+                                        bgcolor: locationColors[index],
+                                    }}
+                                />
+                                <Typography
+                                    variant="body2"
+                                    color="text.secondary"
+                                    noWrap
+                                >
+                                    {t(location.labelKey)}
+                                </Typography>
+                            </Box>
+
+                            <Typography
+                                variant="body2"
+                                fontWeight={600}
+                                sx={{flexShrink: 0}}
+                            >
+                                {location.value}%
+                            </Typography>
+                        </Box>
+                    ))}
+                </Stack>
             </Box>
         </Paper>
     )
