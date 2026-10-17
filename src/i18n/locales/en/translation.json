@@ -70,5 +70,9 @@
   "ios": "iOS",
   "windows": "Windows",
   "android": "Android",
-  "other": "Other"
+  "other": "Other",
+  "marketingSeo": "Marketing & SEO",
+  "organicTrafficAndConversions": "Organic traffic and conversions over time",
+  "organicTraffic": "Organic traffic",
+  "conversions": "Conversions"
 }

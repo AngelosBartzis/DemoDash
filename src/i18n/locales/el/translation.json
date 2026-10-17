@@ -70,5 +70,9 @@
   "ios": "iOS",
   "windows": "Windows",
   "android": "Android",
-  "other": "Άλλο"
+  "other": "Άλλο",
+  "marketingSeo": "Μάρκετινγκ & SEO",
+  "organicTrafficAndConversions": "Οργανική επισκεψιμότητα και μετατροπές με την πάροδο του χρόνου",
+  "organicTraffic": "Οργανική επισκεψιμότητα",
+  "conversions": "Μετατροπές"
 }

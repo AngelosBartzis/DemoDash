@@ -1,5 +1,4 @@
 import {
-    Paper,
     Stack,
     Typography,
 } from '@mui/material'
@@ -10,6 +9,7 @@ import TotalUsersChart from '../components/dashboard/TotalUsersChart.jsx'
 import TrafficByWebsite from '../components/dashboard/TrafficByWebsite.jsx'
 import TrafficByDevice from '../components/dashboard/TrafficByDevice.jsx'
 import TrafficByLocation from '../components/dashboard/TrafficByLocation.jsx'
+import MarketingSeo from "../components/dashboard/MarketingSeo.jsx";
 
 export default function DashboardPage() {
     const {t} = useTranslation()
@@ -48,23 +48,7 @@ export default function DashboardPage() {
                 </Grid>
             </Grid>
 
-
-            <Paper
-                variant="outlined"
-                sx={{
-                    p: {xs: 2.5, sm: 3},
-                    minHeight: 180,
-                    borderRadius: 3,
-                }}
-            >
-                <Typography variant="h6" fontWeight={600}>
-                    {t('recentActivity')}
-                </Typography>
-
-                <Typography color="text.secondary" sx={{mt: 2}}>
-                    {t('activityPlaceholder')}
-                </Typography>
-            </Paper>
+            <MarketingSeo/>
         </Stack>
     )
 }
