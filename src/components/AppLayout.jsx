@@ -82,7 +82,7 @@ export default function AppLayout({
                     <Outlet context={{isLoggedIn, setIsLoggedIn}}/>
                 </Box>
 
-                {isDesktop && <RightSidebar/>}
+                {isLoggedIn && isDesktop && <RightSidebar/>}
             </Box>
 
         </Box>

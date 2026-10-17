@@ -41,6 +41,10 @@ export default function AppSidebar({
         userProfile: true,
     })
 
+    if (!isLoggedIn) {
+        return null
+    }
+
     const toggleGroup = (key) => {
         setExpandedGroups((current) => ({
             ...current,
