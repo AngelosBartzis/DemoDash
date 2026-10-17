@@ -3,7 +3,7 @@ import {Box, useMediaQuery} from '@mui/material'
 import {useTheme} from '@mui/material/styles'
 import {Outlet, useNavigate} from 'react-router-dom'
 import AppNavbar from './layout/AppNavbar.jsx'
-import AppSidebar from './layout/AppSidebar.jsx'
+import AppSidebar from './sidebar/AppSidebar.jsx'
 import SettingsMenu from './layout/SettingsMenu.jsx'
 import RightSidebar from './layout/RightSidebar.jsx'
 

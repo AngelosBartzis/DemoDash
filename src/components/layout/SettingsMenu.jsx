@@ -11,7 +11,7 @@ import {Language} from '@mui/icons-material'
 import {useTranslation} from 'react-i18next'
 import i18n from '../../i18n/index.js'
 import {useColorMode} from '../../theme/ColorModeContext.js'
-import {languages} from './navigation.js'
+import {languages} from '../sidebar/navigation.js'
 
 export default function SettingsMenu({anchorEl, onClose}) {
     const {t} = useTranslation()
