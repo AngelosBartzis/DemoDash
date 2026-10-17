@@ -74,5 +74,11 @@
   "marketingSeo": "Marketing & SEO",
   "organicTrafficAndConversions": "Organic traffic and conversions over time",
   "organicTraffic": "Organic traffic",
-  "conversions": "Conversions"
+  "conversions": "Conversions",
+  "openMenu": "Open menu",
+  "dashboards": "Dashboards",
+  "defaultDashboard": "Default",
+  "search": "Search...",
+  "brightness": "Brightness",
+  "history": "History"
 }
