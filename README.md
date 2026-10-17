@@ -3,7 +3,7 @@
 A responsive, high-fidelity React dashboard translated directly from a Figma design system. Engineered with modular architecture, clean state management, and internationalization.
 
 🚀 **Live Demo:** [https://demo-dash-6hftwuvvb-angelos-dev.vercel.app/] 
-🎨 **Figma Source:** [https://www.figma.com/design/ifIyQJ1BdavLoSJzIf6iZA/Dashboard-UI-Kit---Dashboard--Free-Admin-Dashboard--Community-?node-id=549-8646&t=PQVQ9UbN6JSj1UMQ-0]
+🎨 **Figma Source:** [https://www.figma.com/design/ifIyQJ1BdavLoSJzIf6iZA/]
 
 ---
 
