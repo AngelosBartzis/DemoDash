@@ -5,6 +5,7 @@ import {
 } from '@mui/material'
 import {useTranslation} from 'react-i18next'
 import DashboardStats from '../components/dashboard/DashboardStats.jsx'
+import TotalUsersChart from '../components/dashboard/TotalUsersChart.jsx'
 
 export default function DashboardPage() {
     const {t} = useTranslation()
@@ -23,6 +24,7 @@ export default function DashboardPage() {
             </Typography>
 
             <DashboardStats/>
+            <TotalUsersChart/>
 
             <Paper
                 variant="outlined"

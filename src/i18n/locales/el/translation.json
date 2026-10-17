@@ -42,5 +42,13 @@
   "account": "Λογαριασμός",
   "corporate": "Εταιρικά",
   "blog": "Ιστολόγιο",
-  "social": "Κοινωνικά"
+  "social": "Κοινωνικά",
+  "totalUsers": "Σύνολο χρηστών",
+  "totalUsersDescription": "Δραστηριότητα χρηστών με την πάροδο του χρόνου",
+  "chartDateRange": "Χρονικό διάστημα γραφήματος",
+  "last7Days": "7 ημέρες",
+  "last30Days": "30 ημέρες",
+  "last90Days": "90 ημέρες",
+  "currentPeriod": "Τρέχουσα περίοδος",
+  "previousPeriod": "Προηγούμενη περίοδος"
 }
