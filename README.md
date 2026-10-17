@@ -1,16 +1,36 @@
-# React + Vite
+# 🎨 React Figma-to-Code Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A responsive, high-fidelity React dashboard translated directly from a Figma design system. Engineered with modular architecture, clean state management, and internationalization.
 
-Currently, two official plugins are available:
+🚀 **Live Demo:** [https://demo-dash-6hftwuvvb-angelos-dev.vercel.app/] 
+🎨 **Figma Source:** [https://www.figma.com/design/ifIyQJ1BdavLoSJzIf6iZA/Dashboard-UI-Kit---Dashboard--Free-Admin-Dashboard--Community-?node-id=549-8646&t=PQVQ9UbN6JSj1UMQ-0]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Design Fidelity:** Pixel-perfect translation from Figma tokens (typography, spacing, color palette).
+- **Internationalization (i18n):** Real-time Greek (EL) & English (EN) language toggling.
+- **Theme Support:** Dark/Light mode theme switcher implemented with Material UI `ThemeProvider`.
+- **Responsive Layout:** Optimized for mobile, tablet, and 4K displays.
+- **Modular Architecture:** Clean, reusable component structure with routing (`react-router-dom`).
 
-## Expanding the Oxlint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## 🛠️ Tech Stack
+
+- **Framework:** React + Vite
+- **UI Component Library:** Material UI (MUI v5)
+- **State & Routing:** React Router v6
+- **Hosting:** Vercel
+
+---
+
+## 📂 Project Structure
+
+src/
+├── assets/          # Static assets & images
+├── components/      # Reusable UI components (Sidebar, Topbar, Cards)
+├── pages/           # Route views (Dashboard, Analytics, Settings, Login)
+├── theme/           # MUI custom theme & color tokens
+└── App.jsx          # Route configurations & layout wrappers
