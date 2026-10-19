@@ -4,7 +4,7 @@ import {
     IconButton,
     InputBase,
     Toolbar,
-    Typography,
+    Typography, useMediaQuery,
 } from '@mui/material'
 import {
     Brightness6,
@@ -18,12 +18,15 @@ import {
 } from '@mui/icons-material'
 import {Link as RouterLink} from 'react-router-dom'
 import {useTranslation} from 'react-i18next'
+import {useTheme} from "@mui/material/styles";
 
 export default function AppNavbar({
                                       onMenuClick,
                                       onSettingsClick,
                                   }) {
     const {t} = useTranslation()
+    const theme = useTheme()
+    const isDesktop = useMediaQuery(theme.breakpoints.up('lg'))
 
     return (
         <AppBar
@@ -62,27 +65,31 @@ export default function AppNavbar({
                         <FavoriteBorder/>
                     </IconButton>
 
-                    <Typography
-                        variant="body2"
-                        color="text.disabled"
-                        sx={{ml: {xs: 0.5, sm: 1}}}
-                    >
-                        {t('dashboards')}
-                    </Typography>
+                    {isDesktop && (
+                        <>
+                            <Typography
+                                variant="body2"
+                                color="text.disabled"
+                                sx={{ml: {xs: 0.5, sm: 1}}}
+                            >
+                                {t('dashboards')}
+                            </Typography>
 
-                    <Typography
-                        variant="body2"
-                        fontWeight={600}
-                        color="text.primary"
-                        component={RouterLink}
-                        to="/"
-                        sx={{
-                            textDecoration: 'none',
-                            whiteSpace: 'nowrap',
-                        }}
-                    >
-                        {t('defaultDashboard')}
-                    </Typography>
+                            <Typography
+                                variant="body2"
+                                fontWeight={600}
+                                color="text.primary"
+                                component={RouterLink}
+                                to="/"
+                                sx={{
+                                    textDecoration: 'none',
+                                    whiteSpace: 'nowrap',
+                                }}
+                            >
+                                {t('defaultDashboard')}
+                            </Typography>
+                        </>
+                    )}
                 </Box>
 
                 <Box sx={{flexGrow: 1}}/>
