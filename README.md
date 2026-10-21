@@ -1,8 +1,8 @@
-# 🎨 React Figma-to-Code Dashboard
+# React Figma-to-Code Dashboard
 
 A responsive, high-fidelity React dashboard translated directly from a Figma design system. Engineered with modular architecture, clean state management, and internationalization.
 
-🚀 **Live Demo:** [https://demo-dash-6hftwuvvb-angelos-dev.vercel.app/] 
+🚀 **Live Demo:** [https://demo-dash-6hftwuvvb-angelos-dev.vercel.app/]
 🎨 **Figma Source:** [https://www.figma.com/design/ifIyQJ1BdavLoSJzIf6iZA/]
 
 ---
