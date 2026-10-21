@@ -29,8 +29,8 @@ A responsive, high-fidelity React dashboard translated directly from a Figma des
 ## 📂 Project Structure
 
 src/
-├── assets/          # Static assets & images
-├── components/      # Reusable UI components (Sidebar, Topbar, Cards)
-├── pages/           # Route views (Dashboard, Analytics, Settings, Login)
+├── components/      # Reusable UI components
+├── i18n/            # Internationalization (i18n) files
+├── pages/           # Route views
 ├── theme/           # MUI custom theme & color tokens
 └── App.jsx          # Route configurations & layout wrappers
